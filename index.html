@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+      <div class="container flex">
+        <img class="logo" src="logo.png" alt="">
+        <div>
+            <ul>
+                <li <a href="" class="hover-link" id="ipl" onclick="onnavItemClick('ipl')">IPL</a></li>
+                <li <a href="" class="hover-link" id="finance" onclick="onnavItemClick('finance')">Finance</a></li>
+                <li <a href="" class="hover-link" id="politics" onclick="onnavItemClick('politics')">Politics</a></li>
+              
+            </ul>
+        </div>
+        <div class="search">
+            <input id="search-text" class="searching" type="text">
+            <button class="btn" id="search-button">search</button>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+        <div class="section-div container flex" id="card-container">
+        
+        </div>  
+    </section>
+
+    
+    <template id="card-template">
+        <div class="card">
+                <img class="img-card" id="card-img" src="https://placehold.co/400x200" alt="">
+            <div class="text-card">
+                <h2 id="card-title">this is title</h2>
+                <h4 class="news-source" id="card-source">this is age 20/23/22</h4>
+                <p class="paragraph" id="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vitae quibusdam quo! In officia, recusandae est sapiente inventore laudantium architecto.</p>
+            </div>
+        </div> 
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
